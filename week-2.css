@@ -1,0 +1,21 @@
+.enquiry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+fieldset {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button{
+    color: aqua;
+
+}
+
+
+
