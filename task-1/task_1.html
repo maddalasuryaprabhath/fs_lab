@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANITS Student Hub</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ANITS Student Hub</h1>
+
+        <p>
+            A simple HTML5 webpage demonstrating the basic concepts of web
+            development including semantic elements, tables, forms and multimedia.
+        </p>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#departments">Departments</a> |
+            <a href="#students">Students</a> |
+            <a href="#registration">Registration</a> |
+            <a href="#media">Media</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <canvas id="myCanvas" width="500" height="300">
+            Your browser does not support the HTML canvas tag.
+        </canvas>
+
+        <!-- About College -->
+        <section id="about">
+
+            <article>
+
+                <h2>About ANITS</h2>
+
+                <p>
+                    <b>Anil Neerukonda Institute of Technology and Sciences (ANITS)</b>
+                    is an autonomous engineering institution that focuses on
+                    academic excellence, innovation and practical learning.
+                </p>
+
+                <p>
+                    The college provides <i>modern laboratories</i>,
+                    <u>industry-oriented curriculum</u>, experienced faculty
+                    members and encourages students to participate in research,
+                    coding competitions and technical events.
+                </p>
+
+                <p>
+                    Mathematical Formula :
+                    x<sup>2</sup> + y<sup>2</sup>
+
+                    <br><br>
+
+                    Chemical Formula :
+                    H<sub>2</sub>SO<sub>4</sub>
+                </p>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- Lists -->
+
+        <section id="departments">
+
+            <h2>Departments</h2>
+
+            <h3>Academic Departments</h3>
+
+            <ol>
+                <li>Computer Science & Engineering</li>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Electronics & Communication Engineering</li>
+                <li>Electrical Engineering</li>
+                <li>Mechanical Engineering</li>
+            </ol>
+
+            <h3>Campus Facilities</h3>
+
+            <ul>
+                <li>Digital Library</li>
+                <li>Innovation Centre</li>
+                <li>Research Labs</li>
+                <li>Placement Cell</li>
+                <li>Indoor Sports Complex</li>
+            </ul>
+
+            <h3>Useful Links</h3>
+
+            <a href="https://anits.edu.in" target="_blank">
+                Official College Website
+            </a>
+
+            <br><br>
+
+            <a href="https://www.google.com" target="_blank">
+                Search with Google
+            </a>
+
+        </section>
+
+        <hr>
+
+        <!-- Table -->
+
+        <section id="students">
+
+            <h2>Student Information</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                    <th>Email</th>
+                </tr>
+
+                <tr>
+                    <td>22A91A4201</td>
+                    <td>Purna</td>
+                    <td>AI & ML</td>
+                    <td>purna@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>22A91A4202</td>
+                    <td>Chandra</td>
+                    <td>CSE</td>
+                    <td>chandra@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>22A91A4203</td>
+                    <td>Kumar</td>
+                    <td>ECE</td>
+                    <td>kumar@example.com</td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <img src="./campus.jpg" alt="Campus" width="450">
+
+        </section>
+
+        <hr>
+
+        <!-- Form -->
+
+        <section id="registration">
+
+            <h2>Student Registration Form</h2>
+
+            <form>
+
+                <label>Full Name</label><br>
+                <input type="text"><br><br>
+
+                <label>Email Address</label><br>
+                <input type="email"><br><br>
+
+                <label>Password</label><br>
+                <input type="password"><br><br>
+
+                <label>Mobile Number</label><br>
+                <input type="tel"><br><br>
+
+                <label>Date of Birth</label><br>
+                <input type="date"><br><br>
+
+                <label>Gender</label><br>
+
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Prefer not to say
+
+                <br><br>
+
+                <label>Hobbies</label><br>
+
+                <input type="checkbox"> Coding
+                <input type="checkbox"> Reading
+                <input type="checkbox"> Cricket
+                <input type="checkbox"> Music
+
+                <br><br>
+
+                <label>Branch</label><br>
+
+                <select>
+
+                    <option>Select Branch</option>
+
+                    <option>CSE</option>
+
+                    <option>AI & ML</option>
+
+                    <option>ECE</option>
+
+                    <option>EEE</option>
+
+                    <option>Mechanical</option>
+
+                </select>
+
+                <br><br>
+
+                <label>Favourite Colour</label><br>
+
+                <input type="color">
+
+                <br><br>
+
+                <label>Age</label><br>
+
+                <input type="number" min="17" max="30">
+
+                <br><br>
+
+                <label>Programming Skill Level</label><br>
+
+                <input type="range" min="1" max="10">
+
+                <br><br>
+
+                <label>Additional Comments</label><br>
+
+                <textarea rows="5" cols="45" placeholder="Write your feedback here..."></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Clear Form">
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Multimedia -->
+
+        <section id="media">
+            <h2>College Media</h2>
+            <h3>College Anthem</h3>
+            <audio controls>
+
+                <source src="audio.mp3" type="audio/mpeg">
+
+            </audio>
+
+            <br><br>
+
+            <h3>Campus Tour</h3>
+
+            <video width="500" controls>
+
+                <source src="video.mp4" type="video/mp4">
+
+            </video>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <aside>
+        <h3>Did You Know?</h3>
+        <p>
+            HTML5 introduced semantic elements like
+            header, nav, section, article and footer,
+            making webpages easier for browsers,
+            search engines and screen readers to understand.
+        </p>
+    </aside>
+    <hr>
+    <footer>
+        <p>
+
+            <b>Designed by:</b> M. Surya Prabhath
+
+            <br>
+
+            B.Tech CSE (AI & ML)
+
+            <br>
+
+            ANITS, Visakhapatnam
+
+        </p>
+
+        <p>
+            © 2026 ANITS Student Hub
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
