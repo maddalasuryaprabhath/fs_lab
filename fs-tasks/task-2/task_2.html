@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Styled Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Styled Webpage</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Creative Learning Hub</h1>
-        <p>
-            HTML5 Graphics and CSS3 Web Styling Demonstration
-        </p>
-    </header>
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#canvas">Canvas</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <!-- Home Section -->
-    <section id="home" class="intro">
-        <h2>Welcome</h2>
-        <p>
-            This webpage demonstrates the concepts of HTML5 and CSS3.
-            It includes a canvas element, modern webpage styling,
-            navigation links and responsive content cards.
-        </p>
-    </section>
-    <!-- Canvas Section -->
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Styled Webpage</h1>
+    <p>Demonstrating HTML5 Canvas Graphics and Web Layout Structure</p>
+  </header>
+
+  <hr>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#canvas">Canvas Section</a> |
+    <a href="#cards">Services Section</a> |
+    <a href="#about">About</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <hr>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- Part A: HTML5 Canvas Section -->
     <section id="canvas">
-        <h2>Canvas Demonstration</h2>
-        <!-- Canvas Required in Assignment -->
-        <canvas width="700" height="250">
-            Your browser does not support the canvas element.
-        </canvas>
-        <p class="note">
-        </p>
+      <h2>Part A: HTML5 Canvas Graphics</h2>
+      <p>Graphics rendered dynamically via JavaScript canvas methods:</p>
+      
+      <!-- Canvas element -->
+      <canvas id="myCanvas" width="600" height="250"></canvas>
     </section>
-    <!-- Content Cards -->
-    <section id="features">
-        <h2>Learning Modules</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>HTML5</h3>
-                <p>
-                    HTML5 introduces semantic elements,
-                    multimedia support and modern form controls
-                    that help developers build better web pages.
-                </p>
-                <button>
-                    Learn More
-                </button>
-            </div>
-            <div class="card">
-                <h3>CSS3</h3>
-                <p>
-                    CSS3 provides gradients,
-                    shadows,
-                    rounded corners,
-                    transitions and
-                    responsive layouts for attractive websites.
-                </p>
-                <button>
-                    Explore
-                </button>
-            </div>
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>
-                    Combining HTML5 and CSS3 allows developers
-                    to build visually appealing,
-                    interactive and user-friendly websites.
-                </p>
-                <button>
-                    Read More
-                </button>
-            </div>
-        </div>
+
+    <hr>
+
+    <!-- Part B: Three Content Cards Section -->
+    <section id="cards">
+      <h2>Part B: Content Cards</h2>
+      
+      <!-- Card 1 -->
+      <article>
+        <h3>Web Design</h3>
+        <p>Crafting modern, responsive layouts using HTML5 and structural tags tailored to user requirements.</p>
+        <button type="button">Read More</button>
+      </article>
+
+      <br>
+
+      <!-- Card 2 -->
+      <article>
+        <h3>Canvas Graphics</h3>
+        <p>Utilizing the 2D canvas API for dynamic rendering of shapes, text formatting, and graphic visualizations.</p>
+        <button type="button">Explore</button>
+      </article>
+
+      <br>
+
+      <!-- Card 3 -->
+      <article>
+        <h3>Interactive UI</h3>
+        <p>Enhancing user interactive experiences through semantic markup and integrated scripts.</p>
+        <button type="button">Get Started</button>
+      </article>
     </section>
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>
-            Email : student@example.com
-        </p>
-        <p>
-            Phone : +91 9876543210
-        </p>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>
-            Designed by <strong>M. Surya Prabhath</strong>
-        </p>
-        <p>
-            B.Tech CSE (AI & ML)
-        </p>
-        <p>
-            © 2026 My Styled Webpage
-        </p>
-    </footer>
+
+  </main>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2026 My Styled Webpage | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for Drawing on Canvas (Part A) -->
+  <script>
+    // Get the canvas element and its 2D rendering context
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // 1. Draw a Rectangle
+    ctx.fillStyle = 'red';
+    ctx.fillRect(30, 30, 120, 80);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'black';
+    ctx.strokeRect(30, 30, 120, 80);
+
+    // 2. Draw a Circle
+    ctx.beginPath();
+    ctx.arc(240, 70, 40, 0, Math.PI * 2, false);
+    ctx.fillStyle = 'green';
+    ctx.fill();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'black';
+    ctx.stroke();
+
+    // 3. Draw a Line
+    ctx.beginPath();
+    ctx.moveTo(330, 30);
+    ctx.lineTo(520, 110);
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = 'blue';
+    ctx.stroke();
+
+    // 4. Display Name as Text
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText('Student Name: Surya Prabhath', 100, 180);
+  </script>
+
 </body>
 </html>
