@@ -21,11 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Form data stored in variable:", submittedData);
 
             if (output) {
-                output.textContent = 
-                    `Name: ${submittedData.fullname}\n` +
-                    `Email: ${submittedData.email}\n` +
-                    `Phone: ${submittedData.phone}\n` +
-                    `Address: ${submittedData.address}`;
+                document.getElementById("output-name").textContent = `Name: ${submittedData.fullname}`;
+                document.getElementById("output-email").textContent = `Email: ${submittedData.email}`;
+                document.getElementById("output-phone").textContent = `Phone: ${submittedData.phone}`;
+                document.getElementById("output-address").textContent = `Address: ${submittedData.address}`;
             }
         });
     }
