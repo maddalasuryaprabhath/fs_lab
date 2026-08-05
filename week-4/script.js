@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
             background.style.backgroundColor = nextColor;
         });
     }
-
     const output = document.getElementById("output");
 
     if (form) {
