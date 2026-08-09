@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webpage</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>This is a Dynamic webpage</h1>
+    <form action="#submit" id="form">
+            <legend>Personal Information</legend>
+            <label for="fullname">Name: </label>
+            <input id="fullname" name="fullname" type="text" placeholder="enter your name">
+            <br>
+            <label for="email">Mail-Id: </label>
+            <input id="email" name="email" type="email" placeholder="email@example.com">
+            <br>
+            <label for="phone">Phone: </label>
+            <input id="phone" name="phone" type="tel" min="10" placeholder="9123456780">
+            <br>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" placeholder="Enter your address" rows="10" cols="50"></textarea>
+            <button id="submit">submit</button>
+        </form>
+    <button type="button" id="bg">click the button to change text</button>
+
+    <div id="output">
+        <p id="output-name"></p>
+        <p id="output-email"></p>
+        <p id="output-phone"></p>  
+        <p id="output-address"></p>
+    </div>
+</body>
+</html>

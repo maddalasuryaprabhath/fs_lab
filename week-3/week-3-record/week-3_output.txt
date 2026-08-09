@@ -1,0 +1,9 @@
+Output :
+
+        Our class today includes: Aisha, Noah, Mila, Ethan
+        Hi Aisha! Welcome to the class.
+        Hi Noah! Welcome to the class.
+        Hi Mila! Welcome to the class.
+        Hi Ethan! Welcome to the class.
+        Total age of the group: 79
+        Average age of the group: 19.75 
