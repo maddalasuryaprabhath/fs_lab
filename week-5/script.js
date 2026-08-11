@@ -25,7 +25,6 @@ console.log(`Current User Info: ${JSON.stringify(os.userInfo())}`);
 
 // DNS Module
 const dns = require('dns');
-
 dns.lookup('google.com', (err, address, family) => {
     if (err) {
         console.error(`DNS lookup failed: ${err.message}`);
