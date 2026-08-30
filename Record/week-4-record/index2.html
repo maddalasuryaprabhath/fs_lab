@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webpage Using DOM & JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        .task-item {
+            padding: 8px;
+            margin: 5px 0;
+            background: #f0f0f0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Task Manager</h1>
+    <input type="text" id="taskInput" placeholder="Enter new task...">
+    <button id="addTaskBtn">Add Task</button>
+    <button id="toggleThemeBtn">Toggle Theme</button>
+
+    <h3>Task List</h3>
+    <div id="taskList"></div>
+
+    <script>
+        // Selecting DOM Elements
+        const taskInput = document.getElementById('taskInput');
+        const addTaskBtn = document.getElementById('addTaskBtn');
+        const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+        const taskList = document.getElementById('taskList');
+
+        // Add Task Dynamically
+        addTaskBtn.addEventListener('click', () => {
+            const taskText = taskInput.value.trim();
+            if (taskText === '') {
+                alert('Please enter a valid task!');
+                return;
+            }
+
+            // Create Elements Dynamically
+            const div = document.createElement('div');
+            div.className = 'task-item';
+
+            const span = document.createElement('span');
+            span.textContent = taskText;
+
+            const deleteSpan = document.createElement('span');
+            deleteSpan.textContent = '✖';
+            deleteSpan.className = 'delete-btn';
+            deleteSpan.addEventListener('click', () => taskList.removeChild(div));
+
+            div.appendChild(span);
+            div.appendChild(deleteSpan);
+            taskList.appendChild(div);
+
+            taskInput.value = '';
+        });
+
+        // Toggle Theme Dynamically
+        toggleThemeBtn.addEventListener('click', () => {
+            document.body.style.backgroundColor =
+                document.body.style.backgroundColor === 'black' ? 'white' : 'black';
+            document.body.style.color =
+                document.body.style.color === 'white' ? 'black' : 'white';
+        });
+    </script>
+</body>
+</html>
