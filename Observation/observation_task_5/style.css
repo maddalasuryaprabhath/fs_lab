@@ -1,0 +1,103 @@
+/* Base Reset & Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container */
+.calculator-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Error Message */
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+/* Output Display Area */
+.result-container {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 2px dashed #e0e0e0;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.product-display-name {
+    font-weight: 600;
+    color: #333333;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.total-price {
+    color: #28a745;
+    font-size: 22px;
+}
