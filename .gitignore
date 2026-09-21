@@ -1,0 +1,19 @@
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Coverage and build output
+coverage/
+dist/
+build/
+
+# Local OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
