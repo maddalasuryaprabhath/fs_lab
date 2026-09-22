@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10% 0 10% 0;
+
+}
+button{
+  border-radius: 5%;
+}
+
+h1{
+  color: blue;
+  font-size: 30px;
+  text-align: center;
+}
+
+.favicon{
+  width: 30%;
+  height: 30%;
+}
