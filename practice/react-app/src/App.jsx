@@ -1,26 +1,39 @@
 import './App.css'
+import About from './About'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact';
+import Welcome from './Welcome';
 
 function App() {
-  function handleClick() {
-    alert('Button clicked! Handle Click function executed.');
-  }
+
   return (
-
     <>
+    <BrowserRouter>
 
-    <h1>Hello World</h1>
+            <nav>
 
-    <button onClick={() => alert('Button clicked!')}>Click Me</button>
+                <Link to="/">Home</Link> |{" "}
+                <Link to="/about">About</Link> |{" "}
+                <Link to="/Contact">Contact</Link>
 
-    <button onClick={handleClick}>Click for hand</button>
+            </nav>
 
-    {/* image through public folder */}
-    <img src="https://anits.org/static/images/campus.jpg" alt="Campus" />
+            <Routes>
 
-    {/* image through src folder */}
-    <img className="favicon" src= "favicon.svg" alt="Campus" /> 
+                <Route path="/" element={<Home />} />
+
+                <Route path="/about" element={<About />} />
+                <Route path="/Contact" element={<Contact />} />
+
+            </Routes>
+        </BrowserRouter>
+
+        <Welcome />
 
     </>
+
+
 
   );
 }
